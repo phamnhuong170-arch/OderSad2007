@@ -1,0 +1,25 @@
+{
+  "name": "techvn-backend",
+  "version": "1.0.0",
+  "description": "TechVN API Backend — Node.js/Express",
+  "main": "src/server.js",
+  "scripts": {
+    "start":  "node --experimental-sqlite src/server.js",
+    "dev":    "node --experimental-sqlite --watch src/server.js",
+    "seed":   "node --experimental-sqlite database/seed.js",
+    "test":   "node --experimental-sqlite src/test.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "express-rate-limit": "^7.1.5",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "dotenv": "^16.3.1",
+    "uuid": "^9.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
